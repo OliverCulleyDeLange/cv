@@ -148,11 +148,11 @@
             <h1><strong>OLIVER</strong> CULLEY DE LANGE</h1>
 
             <div class="contact-details">
-                <div class="contact-detail"> Mobile: <strong><a href="tel:07718188996">07718 188 996</a></strong></div>
                 <div class="contact-detail"> E-mail: <strong><a
                             href="mailto:hireme@oliverdelange.co.uk">hireme@oliverdelange.co.uk</a></strong></div>
                 <div class="contact-detail"> Website: <strong><a
                             href="http://oliverdelange.co.uk">oliverdelange.co.uk</a></strong></div>
+                <div class="contact-detail"> Github: <strong><a href="https://github.com/OliverCulleyDeLange">OliverCulleyDeLange</a></strong></div>
             </div>
         </header>
 
@@ -167,15 +167,17 @@
 
             <h3>Technology Timeline</h3>
             <div id="timeline" style="height: 12.5cm;"></div>
-            <h3>Qualifications</h3>
+            <h3>Recent project links</h3>
             <ul>
-                <li><strong>Java</strong> SE 7 Programmer I - Oracle Certified Associate - 2015</li>
-                <li><strong>ITIL</strong> V3 Foundation – 2013</li>
+                <li><a href="https://github.com/OliverCulleyDeLange/simple_workout_tracker">Simple workout tracker:</a> a <strong>Flutter</strong> app I'm building for fun.</li>
+                <li><a href="https://github.com/OliverCulleyDeLange/wcr-android-kt">WeClimb.Rocks:</a> an <strong>Android</strong> climbing app which I used to learn Android development.</li>
+                <li><a href="https://github.com/OliverCulleyDeLange/ctw_flutter">Cheat to Win:</a> a <strong>Flutter</strong> game which I used to self learn about various availabe widgets and apis.</li>
             </ul>
         </section>
 
         <div class="page-break"></div>
     </div>
+
     <div class="page">
         <section class="left">
             <i class="fa fa-briefcase"></i>
@@ -272,7 +274,7 @@
             dataTable.addColumn({ type: 'date', id: 'Start' });
             dataTable.addColumn({ type: 'date', id: 'End' });
             dataTable.addRows([
-                ['Cheat to Win', '(Personal Project) Flutter', new Date(2019, 7, 1), new Date(2019, 10, 12)],
+                ['Flutter Projects', '(Personal Projects) Flutter', new Date(2019, 7, 1), new Date(2020, 3, 1)],
                 ['HaveIBeenPwned', 'Flutter', new Date(2019, 3, 1), new Date(2019, 5, 1)],
                 ['Network Capacity', 'Java, InfluxDB, Grafana', new Date(2018, 9, 1), new Date(2019, 5, 1)],
                 ['IOT Authentication', 'MQTT Messaging, Mosquitto, Vagrant', new Date(2018, 7, 1), new Date(2018, 9, 1)],
@@ -287,6 +289,9 @@
                 ['Time Out', 'Career break', new Date(2017, 4, 1), new Date(2018, 3, 1)],
                 ['Time Out', 'Career break', new Date(2019, 5, 1), new Date(2020, 3, 1)],
             ]);
+            var view = new google.visualization.DataView(dataTable);
+            view.setColumns([0, 2]);
+
             var opts = {
                 timeline: {
                     rowLabelStyle: { fontSize: 12 },
