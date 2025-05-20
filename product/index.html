@@ -1,0 +1,324 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/df1b2e0e0c.js"></script>
+    <style>
+        a {
+            text-decoration: none;
+            color: #52adc8;
+        }
+
+        body {
+            color: #7c8081;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #FAFAFA;
+            font: 12pt "Tahoma";
+            font-size: 0.8em;
+            line-height: 1.5;
+        }
+
+        * {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 10mm;
+            margin: 10mm auto;
+            border: 1px #D3D3D3 solid;
+            border-radius: 5px;
+            background: white;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        @media print {
+
+            html,
+            body {
+                width: 210mm;
+                height: 297mm;
+            }
+
+            .page {
+                margin: 0;
+                border: initial;
+                border-radius: initial;
+                width: initial;
+                min-height: initial;
+                box-shadow: initial;
+                background: initial;
+                page-break-after: always;
+            }
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 500;
+            line-height: 1.75em;
+            margin-bottom: 1em;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin-top: 2em;
+        }
+
+        i {
+            cursor: default;
+            height: 4em;
+            text-align: center;
+            width: 100%;
+        }
+
+        i:before {
+            font-size: 3.5em;
+            opacity: 0.35;
+        }
+
+        header {
+            margin-bottom: 2em;
+            padding-top: 3em;
+            position: relative;
+            text-align: center;
+        }
+
+        header:before,
+        header:after {
+            border-bottom: solid 1.5px;
+            border-top: solid 1.5px;
+            content: '';
+            height: 7px;
+            opacity: 0.1;
+            position: absolute;
+            top: 1.75em;
+            width: 43%;
+        }
+
+        header:before {
+            left: 0;
+        }
+
+        header:after {
+            right: 0;
+        }
+
+        header i {
+            position: absolute;
+            left: 0;
+            top: 1em;
+        }
+
+        .contact-details {
+            display: flex;
+        }
+
+        .contact-detail {
+            flex-grow: 1;
+        }
+
+        #me {
+            height: 200px;
+            position: absolute;
+            right: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <i class="fa fa-info" aria-hidden="true"></i>
+            <h1><strong>OLIVER</strong> CULLEY DE LANGE</h1>
+
+            <div class="contact-details">
+                <div class="contact-detail"> E-mail: <strong><a
+                            href="mailto:hireme@oliverdelange.co.uk">hireme@oliverdelange.co.uk</a></strong></div>
+                <div class="contact-detail"> Website: <strong><a
+                            href="http://oliverdelange.co.uk">oliverdelange.co.uk</a></strong></div>
+                <div class="contact-detail"> Github: <strong><a
+                            href="https://github.com/OliverCulleyDeLange">OliverCulleyDeLange</a></strong></div>
+            </div>
+        </header>
+
+        <section>
+            <h3>Summary</h3>
+            <p>
+                <strong>Technically grounded</strong> and <strong>product focused</strong>, with strong experience in <strong>mobile development</strong>,
+                cross-functional collaboration, and customer-focused iteration. I bring a <strong>builder’s mindset</strong> and a track
+                record of owning features from <strong>conception to delivery</strong>.
+            </p>
+            <p>
+                I’m now focused on <strong>product roles</strong> where I can apply the breadth of my engineering experience to <strong>build
+                exciting
+                experiences and products</strong>.
+            </p>
+
+            <h3>Product Skills</h3>
+            <ul>
+                <li>Feature ideation, ownership & roadmap contribution</li>
+                <li>Cross-functional collaboration (Dev, Product, Design, Support, Marketing)</li>
+                <li>Prioritising customer feedback to drive feature iteration (bug/feature triage)</li>
+                <li>Data-informed prioritisation (mixpanel analytics analysis)</li>
+                <li>Shipping MVPs & validating hypotheses (eg, video coach, active coach)</li>
+                <li>Figma, Mixpanel</li>
+            </ul>
+
+            <h3>Tech skills</h3>
+            <p>
+                Android, Kotlin, Rust, Typescript, SvelteKit, Git / GitHub, Bluetooth, Location, Maps, Video, IOS, SwiftUI, Flutter, Kotlin Multiplatform Mobile, Firebase, Mixpanel
+            </p>
+
+            <h3>Recent personal projects</h3>
+            <ul>
+
+                <li>
+                    <h4>
+                        GrvMkr (<a href="https://oliverdelange.co.uk/grvmkr/">app</a>,
+                        <a href="https://oliverdelange.co.uk/projects/GrvMkr/">blog1</a>,
+                        <a href="https://oliverdelange.co.uk/projects/GrvMkr_2/">blog2</a>,
+                        <a href="https://oliverdelange.co.uk/projects/GrvMkr_3/">blog3</a>)
+                    </h4>
+                    <p>
+                        A progressive web application (PWA) for creating, playing and sharing percussive grooves.
+                        <strong><a href="https://oliverdelange.co.uk/projects/GrvMkr/">3 day MVP</a></strong> with fast iteration using
+                        <strong>AI tools</strong> to increase output. Regular <strong>user testing and improvements</strong> based on feedback.
+                    </p>
+                </li>
+                <li>
+                    <h4>
+                        Location Alarm (<a href="https://github.com/OliverCulleyDeLange/location-alarm">GitHub</a>)
+                    </h4>
+                    <p>
+                        A location-based alarm app, where I designed and delivered a <strong>full product experience</strong> across
+                        mobile platforms.
+                    </p>
+                <li>
+                    <h4>
+                        WeClimb.Rocks (<a href="https://oliverdelange.co.uk/projects/We_climb_rocks/">blog</a>)
+                    </h4>
+                    <p>
+                        An <strong>Android</strong> climbing app which aimed to <strong>simplify</strong> the experience of <strong>creating and
+                        sharing climbing topos</strong>, with a <strong>community focused</strong> approach.
+                    </p>
+                </li>
+                <li>
+                    <h4>
+                        Cheat to Win (<a href="https://github.com/OliverCulleyDeLange/ctw_flutter">GitHub</a>)
+                    </h4>
+                    <p>
+                        A <strong>Flutter</strong> game which attempted to challenge mobile puzzle game norms, with a
+                        unique approach to game play. <strong>No words, only icons and numbers</strong>. Game levels increase from simple
+                        to
+                        downright mean.
+                    </p>
+                </li>
+            </ul>
+
+        </section>
+
+        <div class="page-break"></div>
+    </div>
+
+    <div class="page">
+        <section class="left">
+            <i class="fa fa-briefcase"></i>
+            <h3>Career History</h3>
+            <h4><strong>Motion Metrics Ltd (Carv)</strong> : Apr 2020 – May 2024</h4>
+            <ol>
+                <li>
+                    <h5><strong>Android Engineer</strong></h5>
+                </li>
+                <p>
+                    As the second software hire in this small start up, I increased Carv's Play Store rating from
+                    <a href="../carv_rating.png"><strong>3.3 to 4.7</strong></a>
+                    by:
+                </p>
+                <ol>
+                    <li>Identifying, mitigating and writing support articles on a number of tricky long standing issues
+                        such as
+                        <strong><a href="https://getcarv.com/blog/android-battery-optimisation">app deaths</a></strong>,
+                        bluetooth
+                        <strong><a href="https://getcarv.com/blog/android-data-transmission">connection</a></strong> and
+                        <strong><a
+                                href="https://getcarv.com/blog/snapdragon-865-bluetooth-issues">corruption</a></strong>.
+                    </li>
+                    <li>Leading the <strong>QA</strong> process, and standardising the release process for android and
+                        ios to reduce the number of bugs released.</li>
+                    <li>Providing quality <strong>support</strong> for customers and team mates.</li>
+                </ol>
+                <p>
+                    I took part in feature ideation sessions, and suggested UI/UX design improvements from the
+                    perspective of a customer.
+                </p>
+                <p>
+
+                    I constantly prioritised customer feedback through bug reporting and feature request channels.
+                </p>
+                <p>
+                    I regularly de-scoped features to meet tight deadlines without sacrificing core value.
+                </p>
+                 <p>
+                    I analysed mixpanel analytics data to make data-informed decisions on feature prioritisation.
+                </p>
+                <p>
+                    I also built internal tools to reduce ops burden and increase visibility for support and product
+                    teams
+                    (e.g., dashboards using SvelteKit & Streamlit)
+                </p>
+            </ol>
+            <h4><strong>Telefonica O2 Ltd</strong> : Sept 2012 – May 2019</h4>
+            <ol>
+                <li>
+                    <h5><strong>Full stack developer (The Lab)</strong> July 2018 - May 2019 </h5>
+                </li>
+                <p>
+                    Owned several PoC applications from business problem to prototype,
+                    identifying root issues and proposing innovative solutions.
+                </p>
+
+                <li>
+                    <h5><strong>Software Engineer (Digital Products)</strong> July 2014 - July 2018</h5>
+                </li>
+                <p>
+                    Built full-stack features for O2 Drive and the Online Shop. Helped increase conversion rates by 31%
+                    and net upgrade sales by 52%.
+                </p>
+
+                <li>
+                    <h5><strong>Apprentice</strong> Sept 2012 - July 2014</h5>
+                </li>
+                <p>
+                    Built tools to automate reports (Excel/VBA), visualise 4G rollout data, and support O2’s PKI system.
+                </p>
+            </ol>
+        </section>
+
+        <section class="right">
+            <i class="fa fa-volume-up"></i>
+            <h3>Interests</h3>
+            <p>I’m a <strong>rock climber</strong> first, a <strong>skier</strong> second and a
+                <strong>mountain biker</strong> third.
+            </p>
+            <p>I also enjoy <strong>producing electronic music</strong>. That's not to say it's any good though.
+        </section>
+    </div>
+</body>
+
+</html>
